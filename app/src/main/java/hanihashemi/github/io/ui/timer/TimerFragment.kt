@@ -1,4 +1,4 @@
-package hanihashemi.github.io.ui.dashboard
+package hanihashemi.github.io.ui.timer
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import hanihashemi.github.io.R
 
-class DashboardFragment : Fragment() {
+class TimerFragment : Fragment() {
 
-    private lateinit var dashboardViewModel: DashboardViewModel
+    private lateinit var timerViewModel: TimerViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        dashboardViewModel =
-            ViewModelProviders.of(this).get(DashboardViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
-        val textView: TextView = root.findViewById(R.id.text_dashboard)
-        dashboardViewModel.text.observe(this, Observer {
+        timerViewModel =
+            ViewModelProviders.of(this).get(TimerViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_timer, container, false)
+        val textView: TextView = root.findViewById(R.id.text_home)
+        timerViewModel.text.observe(this, Observer {
             textView.text = it
         })
         return root

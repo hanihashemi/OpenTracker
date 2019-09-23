@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">OpenTracker</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+
+    // Bottom Tabs
+    <string name="title_timer">Timer</string>
+    <string name="title_history">History</string>
+
+
 </resources>
