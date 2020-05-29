@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">OpenTracker</string>
 
-    // Bottom Tabs
+    //Bottom Tabs
     <string name="title_timer">Timer</string>
     <string name="title_history">History</string>
+
+    //Timer
+    <string name="timer_button_start">Start</string>
+    <string name="timer_button_stop">Stop</string>
 
 
 </resources>
